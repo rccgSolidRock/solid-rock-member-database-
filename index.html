@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Solid Rock Model Parish</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header-section">
+            <header>
+               
+                <img src="./assets/RCCG LOGO.png" alt="rccg-logo" width="80" height="80"> 
+            </header>
+    
+           
+      </div>
+        <div class="header-text">
+            <div class="header-text">
+                <h1>Solid Rock</h1>
+                <h3>Model Parish</h3>
+            </div>
+            <div class="welcome-section">
+                <h2>Welcome to Church!!</h2>
+            </div> 
+
+        </div>
+        <form action="https://script.google.com/macros/s/AKfycbwAU_ZABkpzdztV6zIYAqvWatMi9gq3_je0K4QeTn6v4e0xDefLafb0BhhN3XyiY_k/exec" class="form-container" id="form-container" method="POST">
+            <fieldset>
+                <label for="first-name">First-name:<input type="text" name="first-name" id="first-name"></label>
+                <label for="last-name">Last-name:<input type="text" name="last-name"></label>
+            </fieldset>
+            <fieldset>
+                <label for="marital-status">Marital Status</label>
+                <select name="marital-status" id="marital-status">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widow-widower">Widow/Widower</option>
+                </select>
+                <!--<legend>Marital Status</legend>
+            
+                <label for="single"><input type="radio" name="status" id="single">SINGLE</label>
+                <label for="married"><input type="radio" name="status" id="married">MARRIED</label>
+                <label for="widow-widower"><input type="radio" name="status" id="widow-widower">WIDOW/WIDOWER</label> -->
+            </fieldset>
+            <fieldset>
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" name="occupation">
+            </fieldset>
+            <fieldset>
+                
+                <label for="home-address">Home Address:</label>
+                <textarea name="home-address" id="home-address" cols="30" rows="5"></textarea>
+                <label for="b-stop">Nearest Bus-stop:</label>
+                <input type="text" id="b-stop" name="bus-stop">
+                <label for="office-address">Office Address:</label>
+                <textarea name="office-address" id="office-address" cols="30" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="time-at-home">Time available at home:</label>
+                <input type="time" name="time-at-home" id="time-at-home">
+                <label for="telephone">Telephone:</label>
+                <input type="text" name="telephone" id="telephone">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>What do you like about the service</legend>
+                <label for="worship"><input type="checkbox" name="worship" id="worship" value="yes" class="inline">Worship:</label>
+                
+                <label for="word"><input type="checkbox" name="word" id="word" value="yes" class="inline">Word:</label>
+
+                <label for="prayers"><input type="checkbox" name="prayers" id="prayers" value="yes" class="inline">Prayers:</label>
+                
+            </fieldset>
+            <div class="prayer-request">
+                <div>
+                    <h3 class="prayer-request-heading">PRAYER REQUEST</h3>
+                    <textarea name="prayer-request" id="prayer-request" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit" >Submit</button>
+
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

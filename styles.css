@@ -1,0 +1,130 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(#4a648c, #205bba, #5394fc); 
+    color: white;
+    
+}
+
+.container {
+padding: 1rem;
+}
+
+.header-section {
+background-image: url(./assets/unsplash_12R18H2tyuU.png); 
+background-repeat: no-repeat;
+background-size: cover;
+width: 398px;
+height: 197px;
+margin: 0 auto;
+position: relative;
+
+}
+
+.header-section .header-text {
+    padding: 0.4rem;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    right: 0.35rem;
+}
+
+.header-text, .welcome-section  {
+    color:  #b0994f;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.header-text h1 {
+    line-height: 1rem;   
+}
+.welcome-section {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+fieldset {
+    border: none;
+    padding: 0.3rem 0;
+    
+}
+input,textarea, select, #time-at-home {
+    width: 100%;
+}
+input, textarea {
+    background-color: #4a648c;
+    border: 1px solid #4a648c;
+}
+.inline {
+    width: unset;
+    margin-right: 0.2rem;
+    vertical-align: center;
+}
+
+.prayer-request-heading {
+    background-color: red;
+    text-align: center;
+}
+
+button {
+    width: 40%;
+    height: 2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: #b0994f;
+    border-radius: 90px;
+}
+
+.congratulations-message {
+    background-image: url(./assets/response_image.png);
+    position: absolute;
+    top: 1rem;
+    background-size: cover;
+    transform: translateX(-50%);
+    border: 1px solid #ccc;
+    z-index: 9999; /* Ensure it appears above other content */
+    max-width: 80%;
+    margin: auto;
+    width: 398px;
+    height: 197px;
+}
+
+/* Blur effect */
+.blurred {
+    filter: blur(4px); 
+  }
+  
+  /* Congratulations message styles */
+  .congratulations-message {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999; /* Ensure it appears above other content */
+    color: #f5ec42;
+  }
+  
+
+@media only screen and (min-width: 600px) {
+    .container, .congratulations-message {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+}
